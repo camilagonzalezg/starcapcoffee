@@ -11,7 +11,9 @@ namespace StarcapWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string[] bebidas = { "coca", "fanta", "pepsi" };
+            BebidaDdl.DataSource = bebidas;
+            BebidaDdl.DataBind();
         }
     }
 }
